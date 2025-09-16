@@ -1,6 +1,7 @@
 call plug#begin()
 
-Plug 'nvim-tree/nvim-web-devicons' " optional
+"Optional Web Icons
+Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'numToStr/Comment.nvim'
 Plug 'nvim-lualine/lualine.nvim'
@@ -12,13 +13,16 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
-" Personal Configs
-set number  "Numbers
-set relativenumber  "Make numbers relative
+"" Personal Configs
+" Set Relative Numbers
+set number
+set relativenumber
 
-syntax on " Enable Syntax Highlighting
+" Enable Syntax Highlighting
+syntax on
 
-set showmatch " Show Matching Brackets Instantly
+" Show matching brackets
+set showmatch
 
 " Highlight Search Results and Enable Incremental Search
 set hlsearch
@@ -42,7 +46,8 @@ set cursorline
 syntax enable
 set termguicolors
 
-set clipboard=unnamedplus " Synchronize yank and paste with system clipboard
+" Synchronize vim clipboard with system clipboard
+set clipboard=unnamedplus
 
 " Undofile to keep undo history when exiting
 set undofile
